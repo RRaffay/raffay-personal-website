@@ -1,0 +1,64 @@
+.ReachMePage {
+  background-color: #fce1e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  text-align: left;
+}
+
+.ReachMePage-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 55.6px;
+  margin-top: 5%;
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.pink-border-focus .form-control:focus {
+  border: 1px solid pink;
+  box-shadow: 0 0 0 0.2rem pink;
+  font-size: 25px;
+}
+
+.form-control-name:focus {
+  border: 1px solid pink;
+  box-shadow: 0 0 0 0.2rem pink;
+  outline: none;
+  border-radius: 5px;
+}
+
+.form-control-name {
+  box-shadow: 0 0 0 0.2rem #fce1e0;
+  border: 1px solid #fce1e0;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.form-control::placeholder {
+  font-size: 25px;
+}
+
+.sendButton {
+  background-color: white;
+  border: 4px solid rgb(255, 173, 186);
+  font-family: Montserrat;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sendButton:hover {
+  font-weight: bold;
+  background-color: rgb(255, 173, 186);
+  color: white;
+}
+
+.cpright {
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 0px;
+  justify-content: baseline;
+}

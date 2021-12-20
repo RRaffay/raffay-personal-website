@@ -1,0 +1,26 @@
+.nav-bg {
+  background-color: #444444;
+}
+
+.nav-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-text-main {
+  font-weight: bold;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* padding-right: var(--bs-gutter-x, 0.75rem); */
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: 2%;
+  margin-left: 2%;
+}
