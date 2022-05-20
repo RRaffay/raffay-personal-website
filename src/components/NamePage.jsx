@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./styles/namePageStyle.css";
 import Typical from "react-typical";
 

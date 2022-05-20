@@ -1,9 +1,7 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import ReactDOM from "react-dom";
 import "./styles/aboutMePageStyle.css";
 import MyImage from "../images/my-pic.png";
-import { Element } from "react-scroll";
 function AboutMePage() {
   return (
     <div className="AboutMePage" id="about-me-page">

@@ -19,6 +19,17 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
+function checkLink(props) {
+  if (props.plink) {
+    return (
+      <a href={props.plink} target="_blank" rel="noopener noreferrer">
+        Link to Project
+      </a>
+    );
+  }
+  return null;
+}
+
 export default function RecipeReviewCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -44,7 +55,7 @@ export default function RecipeReviewCard(props) {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>{props.description}</Typography>
-          <a href={props.plink}>{props.links}</a>
+          {checkLink(props)}
         </CardContent>
       </Collapse>
     </Card>
