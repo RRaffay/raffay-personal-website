@@ -1,0 +1,32 @@
+.blogPage {
+  background-color: #fce1e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3vh;
+  text-align: center;
+}
+
+.BlogPage-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 55.6px;
+  margin-top: 5%;
+  text-align: left;
+  margin-bottom: 2%;
+  align-items: left;
+}
+
+.blog-post-name {
+  font-family: "GlacialIndifferenceRegular";
+  font-weight: bold;
+}
+
+.blog-post-date {
+  font-family: "Montserrat", sans-serif;
+}
+
+.blog-post-content {
+  font-family: "GlacialIndifferenceRegular";
+}

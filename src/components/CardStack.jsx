@@ -38,7 +38,7 @@ export default function RecipeReviewCard(props) {
   };
 
   return (
-    <Card sx={{ boxShadow: 15, borderRadius: 8 }}>
+    <Card sx={{ boxShadow: 15, borderRadius: 6 }}>
       <CardContent sx={{ paddingBottom: 0, paddingTop: 5 }}>
         <span className="project-tag">{props.text}</span>
       </CardContent>

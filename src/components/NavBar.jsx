@@ -44,6 +44,15 @@ function NavBar() {
               <span className="nav-text">Projects &nbsp;&nbsp;</span>
             </Link>
             <Link
+              to="blog-page"
+              spy={false}
+              smooth={true}
+              offset={0}
+              duration={75}
+            >
+              <span className="nav-text">Blog &nbsp;&nbsp;</span>
+            </Link>
+            <Link
               to="reach-me-page"
               spy={false}
               smooth={true}
