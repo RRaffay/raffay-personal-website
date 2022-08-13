@@ -24,60 +24,52 @@ function ProjectsPage() {
       <Container>
         <h1 className="SoftwareEng-header">Software Engineering</h1>
         <Row>
-          <Col sm={1} className="col 2-ds"></Col>
-          <Col sm={4} className="col 1-swe">
+          <Col sm={4} className="col swe-one">
             <CardStack
               text="JARPAmazon"
               description={projectDescriptions.JAPRAmazon}
               plink="https://github.com/RRaffay/JARPA"
             />
           </Col>
-          <Col sm={2} className="col 2-ds"></Col>
-          <Col sm={4} className="col 2-swe">
+          <Col sm={4} className="col swe-two">
             <CardStack
               text="Conmigo"
               description={projectDescriptions.Conmigo}
+              plink="https://youtu.be/Z06xoUkvIkI"
             />
           </Col>
-          <Col sm={1} className="col 2-ds"></Col>
         </Row>
         <br />
         <Row>
-          <Col sm={1} className="col 2-ds"></Col>
-          <Col sm={4} className="col 3-swe">
+          <Col sm={4} className="col swe-four">
             <CardStack
               text="Eventi"
               description={projectDescriptions.Eventi}
               plink="https://youtu.be/-nJjPTXrUgc"
             />
           </Col>
-          <Col sm={2} className="col 2-ds"></Col>
-          <Col sm={4} className="col 4-swe">
+          <Col sm={4} className="col swe-four">
             <CardStack
               text="Others"
               description={projectDescriptions.other_proj}
             />
           </Col>
-          <Col sm={1} className="col 2-ds"></Col>
         </Row>
         <h1 className="DataScience-header">Data Science</h1>
         <Row className="ds-row">
-          <Col sm={1} className="col 2-ds"></Col>
-          <Col sm={4} className="col 1-ds">
+          <Col sm={4} className="col ds-one">
             <CardStack
               text="Superbowl Ads"
               description={projectDescriptions.Superbowl_Ads}
               plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
             />
           </Col>
-          <Col sm={2} className="col 2-ds"></Col>
-          <Col sm={4} className="col 2-ds">
+          <Col sm={4} className="col ds-two">
             <CardStack
               text="IMDb Shiny App"
               description={projectDescriptions.IMDb_Shiny}
               plink="https://abmartha.shinyapps.io/movieanalysis/"
             />
-            <Col sm={1} className="col 2-ds"></Col>
           </Col>
         </Row>
       </Container>

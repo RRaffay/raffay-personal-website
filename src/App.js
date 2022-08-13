@@ -20,7 +20,7 @@ function App() {
       <NamePage />
       <AboutMePage />
       <ProjectsPage />
-      <BlogPage />
+      {/* <BlogPage /> */}
       <ReachMePage />
       <div style={lastStyle}>© Raffay Rana {copyrightYear}</div>
     </>

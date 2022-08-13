@@ -8,7 +8,7 @@ function NamePage() {
       {/* <span className="NamePage-header">RAFFAY RANA</span> */}
       {/* <span className="NamePage-subheader"> Welcome!</span> */}
       <Typical
-        steps={["WELCOME!", 2100, "Glad you're here! :)", 2100]}
+        steps={["Hi! 👋", 2100, "Glad you're here! :)", 2100]}
         loop={Infinity}
         wrapper="p"
         className="NamePage-header"

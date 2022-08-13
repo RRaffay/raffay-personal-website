@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./styles/aboutMePageStyle.css";
 import MyImage from "../images/my-pic.png";
+import MyCarousel from "./Carousel";
+
 function AboutMePage() {
   return (
     <div className="AboutMePage" id="about-me-page">
       <Container>
         <Row>
-          <Col sm={7} className="left-col">
+          <Col sm={6} className="left-col">
             <h1 className="left-col-heading">About Me</h1>
             <br></br>
             <span className="left-col-text">
@@ -16,7 +18,7 @@ function AboutMePage() {
               Economics and a certificate in Markets and Management.<br></br>
               <br></br> Since a young age I have been fascinated by technology.
               What started as a curiosity for the newest tech gadget has morphed
-              into my passion for learning about new technologies and the
+              into my passion for learning about new technologies and
               understanding the ways they impact how we live our lives. While
               I’m still uncertain as to what exactly my future holds, I am sure
               it will be somewhere in the realm of technological innovation.{" "}
@@ -29,14 +31,20 @@ function AboutMePage() {
               The Mountains Echoed, and The Namesake.
             </span>
           </Col>
-          <Col sm={5} className="right-col">
-            <img
+          <Col sm={6} className="right-col">
+            {/* <img
               src={MyImage}
               width="450"
               height="400"
               alt="Raffay"
               className="right-col-image"
-            ></img>
+            ></img> */}
+            <MyCarousel
+              width="450"
+              height="400"
+              alt="Raffay"
+              className="right-col-image"
+            />
           </Col>
         </Row>
       </Container>

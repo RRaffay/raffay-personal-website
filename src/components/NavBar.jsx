@@ -2,8 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import MainImage from "../images/navbarLogo.png";
 import LinkImage from "../images/linkedin-logo.png";
-import TwitImage from "../images/twitter-logo.png";
-import InstaImage from "../images/instagram-logo.png";
+import MediumImage from "../images/medium-logo.png";
 import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
 import "./styles/navbarStyle.css";
 import { Link } from "react-scroll";
@@ -43,7 +42,7 @@ function NavBar() {
             >
               <span className="nav-text">Projects &nbsp;&nbsp;</span>
             </Link>
-            <Link
+            {/* <Link
               to="blog-page"
               spy={false}
               smooth={true}
@@ -51,7 +50,7 @@ function NavBar() {
               duration={75}
             >
               <span className="nav-text">Blog &nbsp;&nbsp;</span>
-            </Link>
+            </Link> */}
             <Link
               to="reach-me-page"
               spy={false}
@@ -62,14 +61,21 @@ function NavBar() {
               <span className="nav-text">Reach Me</span>
             </Link>
           </Nav>
+          <Nav.Link
+            href="https://www.linkedin.com/in/raffay-rana"
+            className="mr-auto"
+            target="_blank"
+          >
+            <img src={LinkImage} width="30" height="30" alt="LinkedIn Logo" />{" "}
+          </Nav.Link>
+          <Nav.Link
+            href="https://medium.com/@ranaraffay"
+            className="mr-auto"
+            target="_blank"
+          >
+            <img src={MediumImage} width="30" height="30" alt="Medium Logo" />{" "}
+          </Nav.Link>
         </Navbar.Collapse>
-        <Nav.Link
-          href="https://www.linkedin.com/in/raffay-rana"
-          className="mr-auto"
-          target="_blank"
-        >
-          <img src={LinkImage} width="30" height="30" alt="LinkedIn Logo" />{" "}
-        </Nav.Link>
       </Container>
     </Navbar>
   );

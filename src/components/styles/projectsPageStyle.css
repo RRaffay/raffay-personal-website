@@ -12,7 +12,7 @@
 .SoftwareEng-header {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 55.6px;
+  font-size: 40.6px;
   margin-top: 5%;
   text-align: left;
   margin-bottom: 2%;
@@ -24,12 +24,34 @@
   justify-content: center;
 }
 
+.swe-one,
+.swe-two,
+.swe-three,
+.swe-four,
+.ds-one,
+.ds-two {
+  margin-right: 7.5%;
+  margin-left: 7.5%;
+}
+
 .swe-heading,
 .ds-heading {
   color: #444444;
   font-family: "GlacialIndifferenceRegular";
 }
 
-.ds-row {
-  margin-right: 0;
+@media (max-width: 1024px) {
+  .swe-one,
+  .swe-two,
+  .swe-three,
+  .swe-four,
+  .ds-one,
+  .ds-two {
+    margin: 7.5%;
+  }
+
+  .DataScience-header,
+  .SoftwareEng-header {
+    margin-bottom: 5%;
+  }
 }
