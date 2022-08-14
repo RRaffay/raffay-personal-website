@@ -34,7 +34,7 @@ function ReachMePage() {
             <input
               type="text"
               className="form-control-name"
-              placeholder="Name?"
+              placeholder="Name and Email"
               name="name"
             ></input>
             <br /> <br />

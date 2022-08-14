@@ -7,7 +7,7 @@ import MyImage5 from "../images/5.png";
 
 function MyCarousel() {
   return (
-    <Carousel fade>
+    <Carousel fade indicators={false}>
       <Carousel.Item interval={1500}>
         <img
           src={MyImage1}
