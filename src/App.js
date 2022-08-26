@@ -1,9 +1,8 @@
 import NavBar from "./components/NavBar";
-import NamePage from "./components/NamePage";
-import AboutMePage from "./components/AboutMePage";
+import NavBarSmall from "./components/NavBarSmall";
 import ProjectsPage from "./components/ProjectsPage";
-import ReachMePage from "./components/ReachMePage";
-import BlogPage from "./components/BlogPage";
+import MainPage from "./components/MainPage";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const copyrightYear = new Date().getFullYear();
@@ -14,16 +13,32 @@ function App() {
     backgroundColor: "#fce1e0",
     paddingBottom: "10px",
   };
+
   return (
-    <>
-      <NavBar />
-      <NamePage />
-      <AboutMePage />
-      <ProjectsPage />
-      {/* <BlogPage /> */}
-      <ReachMePage />
+    <div>
+      {/* <NavBar /> */}
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <NavBar />
+              <MainPage />
+            </>
+          }
+        />
+        <Route
+          path="/projects"
+          element={
+            <>
+              <NavBarSmall />
+              <ProjectsPage />
+            </>
+          }
+        />
+      </Routes>
       <div style={lastStyle}>© Raffay Rana {copyrightYear}</div>
-    </>
+    </div>
   );
 }
 

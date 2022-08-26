@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./styles/projectsPageStyle.css";
 import CardStack from "./CardStack";
+import NavBarSmall from "./NavBarSmall";
 
 function ProjectsPage() {
   const projectDescriptions = {

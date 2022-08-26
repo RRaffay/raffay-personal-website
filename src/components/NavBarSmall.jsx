@@ -9,7 +9,7 @@ import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 
-function NavBar() {
+function NavBarSmall() {
   return (
     <Navbar variant="dark" expand="lg" className="nav-bg" sticky="top">
       <Container bsPrefix="nav-container">
@@ -18,51 +18,14 @@ function NavBar() {
             <img src={MainImage} width="50" height="50" alt="" />{" "}
           </NavLink>
         </Navbar.Brand>
-
         <Navbar.Brand href="#home">
-          <Link to="name-page" spy={false} smooth={true} duration={75}>
+          <NavLink to="/" style={{ textDecoration: "none" }}>
             <span className="nav-text-main">Raffay's Website </span>
-          </Link>
+          </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link
-              to="about-me-page"
-              spy={false}
-              smooth={true}
-              offset={0}
-              duration={75}
-            >
-              <span className="nav-text">About Me &nbsp;&nbsp;</span>
-            </Link>
-            {/* <Link
-              to="blog-page"
-              spy={false}
-              smooth={true}
-              offset={0}
-              duration={75}
-            >
-              <span className="nav-text">Blog &nbsp;&nbsp;</span>
-            </Link> */}
-            <Link
-              to="reach-me-page"
-              spy={false}
-              smooth={true}
-              offset={0}
-              duration={75}
-            >
-              <span className="nav-text">Reach Me&nbsp;&nbsp;</span>
-            </Link>
-            {/* <Link
-              to="project-page"
-              spy={false}
-              smooth={true}
-              offset={0}
-              duration={75}
-            >
-              <span className="nav-text">Projects</span>
-            </Link> */}
             <NavLink to="/projects" style={{ textDecoration: "none" }}>
               <span className="nav-text">Projects</span>
             </NavLink>
@@ -88,4 +51,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBarSmall;
