@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import "./styles/projectsPageStyle.css";
 import CardStack from "./CardStack";
-import NavBarSmall from "./NavBarSmall";
+import { NavLink } from "react-router-dom";
 
 function ProjectsPage() {
   const projectDescriptions = {
@@ -72,6 +72,19 @@ function ProjectsPage() {
               plink="https://abmartha.shinyapps.io/movieanalysis/"
             />
           </Col>
+        </Row>
+        <br></br>
+        <Row className="ds-row">
+          <NavLink to="/machinelearning" style={{ textDecoration: "none" }}>
+            <Col sm={6} className="col ds-three">
+              <CardStack
+                text="Machine Learning Applications"
+                description={projectDescriptions.Superbowl_Ads}
+                plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
+                hideArrow="true"
+              />
+            </Col>
+          </NavLink>
         </Row>
       </Container>
     </div>

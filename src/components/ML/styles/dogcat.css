@@ -1,0 +1,19 @@
+.DogCatClass {
+  background-color: #fce1e0;
+  min-height: 100vh;
+}
+
+.DogCatClass-header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 40.6px;
+  text-align: center;
+  margin-bottom: 2%;
+  padding-top: 2%;
+}
+
+.prediction {
+  text-align: center;
+  font-size: 30px;
+  font-family: "GlacialIndifferenceRegular";
+}

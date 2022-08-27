@@ -3,6 +3,7 @@ import NavBarSmall from "./components/NavBarSmall";
 import ProjectsPage from "./components/ProjectsPage";
 import MainPage from "./components/MainPage";
 import { Route, Routes } from "react-router-dom";
+import ML from "./components/ML";
 
 function App() {
   const copyrightYear = new Date().getFullYear();
@@ -16,7 +17,6 @@ function App() {
 
   return (
     <div>
-      {/* <NavBar /> */}
       <Routes>
         <Route
           path="/"
@@ -36,7 +36,17 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/machinelearning"
+          element={
+            <>
+              <NavBarSmall />
+              <ML />
+            </>
+          }
+        />
       </Routes>
+
       <div style={lastStyle}>© Raffay Rana {copyrightYear}</div>
     </div>
   );

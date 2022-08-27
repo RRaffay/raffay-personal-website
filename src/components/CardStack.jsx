@@ -7,6 +7,7 @@ import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import "./styles/expandCard.css";
+import { blue } from "@mui/material/colors";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -30,6 +31,17 @@ function checkLink(props) {
   return null;
 }
 
+function checkArrow(props) {
+  if (props.hideArrow) {
+    return (
+      <CardContent sx={{ paddingBottom: 5, paddingTop: 5 }}>
+        <span className="project-tag">{props.text}</span>
+      </CardContent>
+    );
+  }
+  return null;
+}
+
 export default function RecipeReviewCard(props) {
   const [expanded, setExpanded] = React.useState(false);
 
@@ -37,6 +49,22 @@ export default function RecipeReviewCard(props) {
     setExpanded(!expanded);
   };
 
+  if (props.hideArrow) {
+    return (
+      <Card
+        sx={{
+          boxShadow: 15,
+          borderRadius: 6,
+        }}
+      >
+        <CardContent sx={{ marginBottom: 2, paddingTop: 5 }}>
+          <span className="project-tag">
+            <b>{props.text}</b>
+          </span>
+        </CardContent>
+      </Card>
+    );
+  }
   return (
     <Card sx={{ boxShadow: 15, borderRadius: 6 }}>
       <CardContent sx={{ paddingBottom: 0, paddingTop: 5 }}>
