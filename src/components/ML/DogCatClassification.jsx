@@ -41,7 +41,6 @@ class DogCatClassification extends React.Component {
       console.log(res.data.duration);
       console.log(res.data.data[0].label);
       this.setState({
-        time: res.data[1],
         prediction: res.data.data[0].label,
         filler: "According to my calculations, this is a ",
       });
@@ -54,7 +53,7 @@ class DogCatClassification extends React.Component {
         <br></br>
         <br></br>
         <div className="DogCatClass-header">
-          <h1>Dog or Cat?</h1>
+          <p>Dog or Cat?</p>
         </div>
         <div className="row">
           <div className="col-md-6 offset-md-3">
