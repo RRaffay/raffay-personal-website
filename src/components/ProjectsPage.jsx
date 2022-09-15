@@ -83,6 +83,7 @@ function ProjectsPage() {
                 plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
                 hideArrow="true"
               />
+              <br></br>
             </Col>
           </NavLink>
         </Row>
