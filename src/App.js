@@ -19,7 +19,7 @@ function App() {
     <div>
       <Routes>
         <Route
-          path="/"
+          path="/my-website-app"
           element={
             <>
               <NavBar />

@@ -14,12 +14,12 @@ function NavBarSmall() {
     <Navbar variant="dark" expand="lg" className="nav-bg" sticky="top">
       <Container bsPrefix="nav-container">
         <Navbar.Brand href="#home">
-          <NavLink to="/">
+          <NavLink to="/my-website-app">
             <img src={MainImage} width="50" height="50" alt="" />{" "}
           </NavLink>
         </Navbar.Brand>
         <Navbar.Brand href="#home">
-          <NavLink to="/" style={{ textDecoration: "none" }}>
+          <NavLink to="/my-website-app" style={{ textDecoration: "none" }}>
             <span className="nav-text-main">Raffay's Website </span>
           </NavLink>
         </Navbar.Brand>

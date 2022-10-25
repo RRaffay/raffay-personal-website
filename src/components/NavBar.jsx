@@ -14,7 +14,7 @@ function NavBar() {
     <Navbar variant="dark" expand="lg" className="nav-bg" sticky="top">
       <Container bsPrefix="nav-container">
         <Navbar.Brand href="#home">
-          <NavLink to="/">
+          <NavLink to="/my-website-app">
             <img src={MainImage} width="50" height="50" alt="" />{" "}
           </NavLink>
         </Navbar.Brand>
