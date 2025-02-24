@@ -1,6 +1,4 @@
 import NavBar from "./components/NavBar";
-import NavBarSmall from "./components/NavBarSmall";
-import ProjectsPage from "./components/ProjectsPage";
 import MainPage from "./components/MainPage";
 import { Route, Routes } from "react-router-dom";
 
@@ -23,15 +21,6 @@ function App() {
             <>
               <NavBar />
               <MainPage />
-            </>
-          }
-        />
-        <Route
-          path="/projects"
-          element={
-            <>
-              <NavBarSmall />
-              <ProjectsPage />
             </>
           }
         />

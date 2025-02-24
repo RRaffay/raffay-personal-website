@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 function NavBar() {
   return (
-    <nav className="bg-secondary sticky top-0">
+    <nav className="bg-secondary sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -19,34 +19,6 @@ function NavBar() {
                 Raffay's Website
               </span>
             </Link>
-          </div>
-
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-4">
-              <Link
-                to="about-me-page"
-                spy={false}
-                smooth={true}
-                offset={0}
-                duration={75}
-                className="cursor-pointer nav-item"
-              >
-                <span className="text-white font-montserrat px-3">About Me</span>
-              </Link>
-              <Link
-                to="reach-me-page"
-                spy={false}
-                smooth={true}
-                offset={0}
-                duration={75}
-                className="cursor-pointer nav-item"
-              >
-                <span className="text-white font-montserrat px-3">Reach Me</span>
-              </Link>
-              <NavLink to="/projects" className="no-underline nav-item">
-                <span className="text-white font-montserrat px-3">Projects</span>
-              </NavLink>
-            </div>
           </div>
 
           <div className="flex items-center space-x-2">
