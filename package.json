@@ -1,6 +1,6 @@
 {
-  "homepage": "https://rraffay.github.io/my-website-app/",
-  "name": "my-website-app",
+  "homepage": "https://rraffay.github.io/raffay-personal-website/",
+  "name": "raffay-personal-website",
   "version": "0.1.1",
   "private": true,
   "dependencies": {

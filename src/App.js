@@ -16,7 +16,7 @@ function App() {
     <div>
       <Routes>
         <Route
-          path="/my-website-app"
+          path="/raffay-personal-website"
           element={
             <>
               <NavBar />
