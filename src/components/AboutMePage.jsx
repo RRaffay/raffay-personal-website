@@ -1,14 +1,13 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import MyCarousel from "./Carousel";
 import { Link } from "react-scroll";
+import MyCarousel from "./Carousel";
 
 function AboutMePage() {
   return (
     <div className="min-h-screen bg-primary py-8" id="about-me-page">
-      <Container>
-        <Row>
-          <Col sm={6} className="mb-8 sm:mb-0">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-5xl font-montserrat font-bold mb-6">About Me</h1>
             <div className="text-lg space-y-4">
               <p>
@@ -47,17 +46,17 @@ function AboutMePage() {
                 </Link>
               </p>
             </div>
-          </Col>
-          <Col sm={6} className="flex justify-center items-start">
+          </div>
+          <div className="w-full md:w-1/2 flex justify-center items-start">
             <MyCarousel
               width="450"
               height="400"
               alt="Raffay"
               className="rounded-lg shadow-xl"
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import CardStack from "./CardStack";
 
 function ProjectsPage() {
@@ -20,58 +19,58 @@ function ProjectsPage() {
 
   return (
     <div className="page-container" id="project-page">
-      <Container>
-        <h1 className="section-header text-center">Software Engineering</h1>
-        <Row>
-          <Col sm={4} className="text-center mx-[7.5%]">
+      <div className="container mx-auto px-4">
+        <h1 className="text-center text-4xl font-bold mb-8">Software Engineering</h1>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="JARPAmazon"
               description={projectDescriptions.JAPRAmazon}
               plink="https://github.com/RRaffay/JARPA"
             />
-          </Col>
-          <Col sm={4} className="text-center mx-[7.5%]">
+          </div>
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="Conmigo"
               description={projectDescriptions.Conmigo}
               plink="https://youtu.be/Z06xoUkvIkI"
             />
-          </Col>
-        </Row>
+          </div>
+        </div>
         <div className="my-4" />
-        <Row>
-          <Col sm={4} className="text-center mx-[7.5%]">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="Eventi"
               description={projectDescriptions.Eventi}
               plink="https://youtu.be/-nJjPTXrUgc"
             />
-          </Col>
-          <Col sm={4} className="text-center mx-[7.5%]">
+          </div>
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="Others"
               description={projectDescriptions.other_proj}
             />
-          </Col>
-        </Row>
+          </div>
+        </div>
         <h1 className="section-header text-center">Data Science</h1>
-        <Row>
-          <Col sm={4} className="text-center mx-[7.5%]">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="Superbowl Ads"
               description={projectDescriptions.Superbowl_Ads}
               plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
             />
-          </Col>
-          <Col sm={4} className="text-center mx-[7.5%]">
+          </div>
+          <div className="mx-auto w-full max-w-md">
             <CardStack
               text="IMDb Shiny App"
               description={projectDescriptions.IMDb_Shiny}
               plink="https://abmartha.shinyapps.io/movieanalysis/"
             />
-          </Col>
-        </Row>
-      </Container>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

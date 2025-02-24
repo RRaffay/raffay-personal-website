@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 
 function ReachMePage() {
   function sendEmail(e) {
@@ -11,7 +10,7 @@ function ReachMePage() {
 
   return (
     <div className="min-h-screen py-16 bg-primary" id="reach-me-page">
-      <Container>
+      <div className="container mx-auto px-4">
         <h1 className="text-5xl font-montserrat font-bold text-center mb-8">Reach Me!</h1>
         <div className="max-w-2xl mx-auto">
           <form onSubmit={sendEmail} className="space-y-6">
@@ -36,7 +35,7 @@ function ReachMePage() {
             </div>
           </form>
         </div>
-      </Container>
+      </div>
     </div>
   );
 }
