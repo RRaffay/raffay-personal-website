@@ -74,19 +74,6 @@ function ProjectsPage() {
           </Col>
         </Row>
         <br></br>
-        <Row className="ds-row">
-          <NavLink to="/machinelearning" style={{ textDecoration: "none" }}>
-            <Col sm={6} className="col ds-three">
-              <CardStack
-                text="Machine Learning Applications"
-                description={projectDescriptions.Superbowl_Ads}
-                plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
-                hideArrow="true"
-              />
-              <br></br>
-            </Col>
-          </NavLink>
-        </Row>
       </Container>
     </div>
   );
