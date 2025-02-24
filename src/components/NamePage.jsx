@@ -1,11 +1,10 @@
 import React from "react";
-import "./styles/namePageStyle.css";
 
 function NamePage() {
   return (
-    <div className="NamePage" id="name-page">
-      <span className="NamePage-header">RAFFAY RANA</span>
-      <span className="NamePage-subheader"> Welcome!</span>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-primary" id="name-page">
+      <span className="font-glacial-bold text-7xl mb-4">RAFFAY RANA</span>
+      <span className="font-glacial text-4xl"> Welcome!</span>
     </div>
   );
 }

@@ -11,47 +11,37 @@ function MyCarousel() {
       <Carousel.Item interval={1500}>
         <img
           src={MyImage1}
-          width="450"
-          height="400"
+          className="w-[450px] h-[400px] object-cover rounded-lg"
           alt="Raffay"
-          className="right-col-image"
-        ></img>
+        />
       </Carousel.Item>
       <Carousel.Item interval={1500}>
         <img
           src={MyImage2}
-          width="450"
-          height="400"
+          className="w-[450px] h-[400px] object-cover rounded-lg"
           alt="Raffay"
-          className="right-col-image"
-        ></img>
+        />
       </Carousel.Item>
       <Carousel.Item interval={1500}>
         <img
           src={MyImage3}
-          width="450"
-          height="400"
+          className="w-[450px] h-[400px] object-cover rounded-lg"
           alt="Raffay"
-          className="right-col-image"
-        ></img>
+        />
       </Carousel.Item>
       <Carousel.Item interval={1500}>
         <img
           src={MyImage4}
-          width="450"
-          height="400"
+          className="w-[450px] h-[400px] object-cover rounded-lg"
           alt="Raffay"
-          className="right-col-image"
-        ></img>
+        />
       </Carousel.Item>
       <Carousel.Item interval={1500}>
         <img
           src={MyImage5}
-          width="450"
-          height="400"
+          className="w-[450px] h-[400px] object-cover rounded-lg"
           alt="Raffay"
-          className="right-col-image"
-        ></img>
+        />
       </Carousel.Item>
     </Carousel>
   );

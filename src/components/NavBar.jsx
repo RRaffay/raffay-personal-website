@@ -1,27 +1,26 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import MainImage from "../images/navbarLogo.png";
 import LinkImage from "../images/linkedin-logo.png";
 import MediumImage from "../images/medium-logo.png";
-import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
-import "./styles/navbarStyle.css";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
 
 function NavBar() {
   return (
-    <Navbar variant="dark" expand="lg" className="nav-bg" sticky="top">
-      <Container bsPrefix="nav-container">
+    <Navbar variant="dark" expand="lg" className="bg-secondary sticky top-0">
+      <Container className="px-4 mx-auto">
         <Navbar.Brand href="#home">
           <NavLink to="/my-website-app">
-            <img src={MainImage} width="50" height="50" alt="" />{" "}
+            <img src={MainImage} className="w-[50px] h-[50px]" alt="Logo" />
           </NavLink>
         </Navbar.Brand>
 
         <Navbar.Brand href="#home">
           <Link to="name-page" spy={false} smooth={true} duration={75}>
-            <span className="nav-text-main">Raffay's Website </span>
+            <span className="text-white font-montserrat font-bold text-xl">
+              Raffay's Website
+            </span>
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,8 +32,9 @@ function NavBar() {
               smooth={true}
               offset={0}
               duration={75}
+              className="cursor-pointer"
             >
-              <span className="nav-text">About Me &nbsp;&nbsp;</span>
+              <span className="text-white font-montserrat px-3">About Me</span>
             </Link>
             {/* <Link
               to="blog-page"
@@ -51,8 +51,9 @@ function NavBar() {
               smooth={true}
               offset={0}
               duration={75}
+              className="cursor-pointer"
             >
-              <span className="nav-text">Reach Me&nbsp;&nbsp;</span>
+              <span className="text-white font-montserrat px-3">Reach Me</span>
             </Link>
             {/* <Link
               to="project-page"
@@ -63,24 +64,24 @@ function NavBar() {
             >
               <span className="nav-text">Projects</span>
             </Link> */}
-            <NavLink to="/projects" style={{ textDecoration: "none" }}>
-              <span className="nav-text">Projects</span>
+            <NavLink to="/projects" className="no-underline">
+              <span className="text-white font-montserrat px-3">Projects</span>
             </NavLink>
           </Nav>
 
           <Nav.Link
             href="https://www.linkedin.com/in/raffay-rana"
-            className="mr-auto"
+            className="mr-2"
             target="_blank"
           >
-            <img src={LinkImage} width="30" height="30" alt="LinkedIn Logo" />{" "}
+            <img src={LinkImage} className="w-[30px] h-[30px]" alt="LinkedIn Logo" />
           </Nav.Link>
           <Nav.Link
             href="https://medium.com/@ranaraffay"
-            className="mr-auto"
+            className="mr-2"
             target="_blank"
           >
-            <img src={MediumImage} width="30" height="30" alt="Medium Logo" />{" "}
+            <img src={MediumImage} className="w-[30px] h-[30px]" alt="Medium Logo" />
           </Nav.Link>
         </Navbar.Collapse>
       </Container>

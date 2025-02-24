@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import NamePage from "./NamePage";
 import AboutMePage from "./AboutMePage";
 import ReachMePage from "./ReachMePage";
@@ -10,7 +9,6 @@ function MainPage() {
       <NamePage />
       <AboutMePage />
       <ReachMePage />
-      {/* <BlogPage /> */}
     </>
   );
 }

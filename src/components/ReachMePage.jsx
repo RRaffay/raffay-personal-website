@@ -1,52 +1,39 @@
 import React from "react";
-import emailjs from "emailjs-com";
 import { Container } from "react-bootstrap";
-import "./styles/reachMePageStyle.css";
 
 function ReachMePage() {
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_4lqdjqh",
-        "template_fshjiyd",
-        e.target,
-        "user_uBuqnrXsIfeBtcbNRmIeK"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    console.log(e.target);
     e.target.reset();
   }
 
   return (
-    <div className="ReachMePage" id="reach-me-page">
+    <div className="min-h-screen py-16 bg-primary" id="reach-me-page">
       <Container>
-        <h1 className="ReachMePage-header">Reach Me!</h1>
-        <div class="form-group pink-border-focus">
-          <form onSubmit={sendEmail}>
+        <h1 className="text-5xl font-montserrat font-bold text-center mb-8">Reach Me!</h1>
+        <div className="max-w-2xl mx-auto">
+          <form onSubmit={sendEmail} className="space-y-6">
             <input
               type="text"
-              className="form-control-name"
+              className="w-full p-3 border-2 border-pink-300 rounded-lg focus:outline-none focus:border-pink-400"
               placeholder="Name and Email"
               name="name"
-            ></input>
-            <br /> <br />
+            />
             <textarea
-              class="form-control"
-              id="exampleFormControlTextarea5"
+              className="w-full p-3 border-2 border-pink-300 rounded-lg focus:outline-none focus:border-pink-400"
               rows="7"
               placeholder="Leave your message here!"
               name="message"
-            ></textarea>
-            <br></br>
-            <input type="submit" className="sendButton" value="SEND"></input>
+            />
+            <div className="text-center">
+              <input
+                type="submit"
+                className="send-button"
+                value="SEND"
+              />
+            </div>
           </form>
         </div>
       </Container>

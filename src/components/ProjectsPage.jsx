@@ -1,8 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import "./styles/projectsPageStyle.css";
 import CardStack from "./CardStack";
-import { NavLink } from "react-router-dom";
 
 function ProjectsPage() {
   const projectDescriptions = {
@@ -21,18 +19,18 @@ function ProjectsPage() {
   };
 
   return (
-    <div className="ProjectsPage" id="project-page">
+    <div className="page-container" id="project-page">
       <Container>
-        <h1 className="SoftwareEng-header">Software Engineering</h1>
+        <h1 className="section-header text-center">Software Engineering</h1>
         <Row>
-          <Col sm={4} className="col swe-one">
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="JARPAmazon"
               description={projectDescriptions.JAPRAmazon}
               plink="https://github.com/RRaffay/JARPA"
             />
           </Col>
-          <Col sm={4} className="col swe-two">
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="Conmigo"
               description={projectDescriptions.Conmigo}
@@ -40,32 +38,32 @@ function ProjectsPage() {
             />
           </Col>
         </Row>
-        <br />
+        <div className="my-4" />
         <Row>
-          <Col sm={4} className="col swe-four">
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="Eventi"
               description={projectDescriptions.Eventi}
               plink="https://youtu.be/-nJjPTXrUgc"
             />
           </Col>
-          <Col sm={4} className="col swe-four">
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="Others"
               description={projectDescriptions.other_proj}
             />
           </Col>
         </Row>
-        <h1 className="DataScience-header">Data Science</h1>
-        <Row className="ds-row">
-          <Col sm={4} className="col ds-one">
+        <h1 className="section-header text-center">Data Science</h1>
+        <Row>
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="Superbowl Ads"
               description={projectDescriptions.Superbowl_Ads}
               plink="https://vizdata-f21.github.io/project-1-r_mageddon/"
             />
           </Col>
-          <Col sm={4} className="col ds-two">
+          <Col sm={4} className="text-center mx-[7.5%]">
             <CardStack
               text="IMDb Shiny App"
               description={projectDescriptions.IMDb_Shiny}
@@ -73,7 +71,6 @@ function ProjectsPage() {
             />
           </Col>
         </Row>
-        <br></br>
       </Container>
     </div>
   );
