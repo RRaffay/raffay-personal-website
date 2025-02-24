@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/raffay-personal-website/static/css/main.0840c090.css",
-    "main.js": "/raffay-personal-website/static/js/main.86b57424.js",
-    "static/media/2.png": "/raffay-personal-website/static/media/2.171777867e7eb019886a.png",
-    "static/media/3.png": "/raffay-personal-website/static/media/3.cf9c02566cd9a1a78adc.png",
-    "static/media/5.png": "/raffay-personal-website/static/media/5.1d78a86d19c3413b285e.png",
+    "main.css": "/raffay-personal-website/static/css/main.2a63b1a3.css",
+    "main.js": "/raffay-personal-website/static/js/main.b11b3c24.js",
     "static/media/4.png": "/raffay-personal-website/static/media/4.149c78d7735a7d7a97cc.png",
     "static/media/medium-logo.png": "/raffay-personal-website/static/media/medium-logo.79caa5b89504598d5de4.png",
     "index.html": "/raffay-personal-website/index.html",
-    "main.0840c090.css.map": "/raffay-personal-website/static/css/main.0840c090.css.map",
-    "main.86b57424.js.map": "/raffay-personal-website/static/js/main.86b57424.js.map"
+    "main.2a63b1a3.css.map": "/raffay-personal-website/static/css/main.2a63b1a3.css.map",
+    "main.b11b3c24.js.map": "/raffay-personal-website/static/js/main.b11b3c24.js.map"
   },
   "entrypoints": [
-    "static/css/main.0840c090.css",
-    "static/js/main.86b57424.js"
+    "static/css/main.2a63b1a3.css",
+    "static/js/main.b11b3c24.js"
   ]
 }
