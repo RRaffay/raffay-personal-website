@@ -29,8 +29,9 @@ jobs:
         if: github.event_name == 'push'
         run: |
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          npx gh-pages --dist dist --nojekyll \
-            --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
-            --message "Deploy ${GITHUB_SHA}"
+          # gh-pages takes the commit author from git config; its --user flag cannot parse "[bot]"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npx gh-pages --dist dist --nojekyll --message "Deploy ${GITHUB_SHA}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
