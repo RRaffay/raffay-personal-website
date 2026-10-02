@@ -1,0 +1,8 @@
+# A Netlify project is linked to this repository and builds a preview of every pull request.
+# These settings replace the ones saved in Netlify from the old Create React App build.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
