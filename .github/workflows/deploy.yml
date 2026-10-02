@@ -1,0 +1,36 @@
+name: Build and deploy
+
+# Every pull request is type-checked and built. A push to main also publishes the build to the
+# gh-pages branch, which GitHub Pages serves.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Publish to gh-pages
+        if: github.event_name == 'push'
+        run: |
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          npx gh-pages --dist dist --nojekyll \
+            --user "github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>" \
+            --message "Deploy ${GITHUB_SHA}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
