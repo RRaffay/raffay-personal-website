@@ -15,7 +15,7 @@ Node 22.12 or newer is required (`.nvmrc`).
 
 ## Deployment
 
-GitHub Pages serves the `gh-pages` branch at https://rraffay.github.io/raffay-personal-website/. `.github/workflows/deploy.yml` type-checks and builds every pull request, and on a push to `main` publishes `dist/` to `gh-pages`. Never commit build output to `main`.
+GitHub Pages serves the `gh-pages` branch at https://raffayrana.me/. `public/CNAME` sets the domain and has to stay, because each deploy replaces everything on `gh-pages`. `.github/workflows/deploy.yml` type-checks and builds every pull request, and on a push to `main` publishes `dist/` to `gh-pages`. Never commit build output to `main`.
 
 ## Architecture
 
